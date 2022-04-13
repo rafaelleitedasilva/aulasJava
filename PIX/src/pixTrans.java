@@ -4,7 +4,12 @@ public class pixTrans {
 	String chaveAl;
 	String chaveTel;
 	
-	public void trans(double valor, String chaveCPF, double saldo){
-		 saldo = saldo - valor; 
+	
+	
+	static void Trans(double valor, pixTrans chaves, Cliente clienteD, Cliente clienteR){
+		 clienteD.saldo -= valor; 
+		 clienteR.saldo += valor; 
+		 System.out.printf("A tranderência para " + clienteR.Nome + " do CPF " + chaves.chaveCPF + " foi realizada! %n");
+		 System.out.printf("O seu novo saldo é: %.2f%n",clienteD.saldo);
 	}
 }
