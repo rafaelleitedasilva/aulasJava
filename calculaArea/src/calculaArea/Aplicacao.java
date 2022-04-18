@@ -10,25 +10,31 @@ public class Aplicacao {
 		CalculaArea A = new CalculaArea();
 		
 		System.out.println("Você quer calcular a área de qual figura ? ");
-		int resposta = teclado.nextInt();
-		
 		System.out.println("1 - Quadrado");
 		System.out.println("2 - Retângulo");
 		System.out.println("3 - Triângulo");
+		int resposta = teclado.nextInt();
 		
 		if(resposta == 1) {
 			int x = teclado.nextInt();
+			System.out.println("Digite o lado x do quadrado: ");
+			System.out.println("Resultado: ");
 			A.calculaAe(x);
 			
 		}else if(resposta == 2) {
+			System.out.println("Digite o lado x do retângulo: ");
 			int x = teclado.nextInt();
+			System.out.println("Digite o lado y do retângulo: ");
 			int y = teclado.nextInt();
+			System.out.println("Resultado: ");
 			A.calculaAe(x, y);
 			
 		}else {
+			System.out.println("Digite a base do triângulo: ");
 			double x = teclado.nextInt();
+			System.out.println("Digite a altura do triângulo: ");
 			double y = teclado.nextInt();
-			
+			System.out.println("Resultado: ");
 			A.calculaAe(x, y);
 		}
 		
