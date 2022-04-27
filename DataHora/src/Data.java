@@ -1,13 +1,13 @@
 
 public class Data {
-	private int hora;
+	private int hora = -1;
 	private int minuto;
 	private int segundo;
 	private int dia;
 	private int mes;
 	private int ano;
-	 boolean FORMATO_12H = true;
-	 boolean FORMATO_24H = false;
+	public static final boolean FORMATO_12H = true;
+	public static final boolean FORMATO_24H = false;
 	
 	public Data(int dia, int mes, int ano) {
 		super();
@@ -27,17 +27,15 @@ public class Data {
 	}
 	
 	public void Imprimir(boolean formato) {
-		if(formato == true && hora >= 0 && hora <= 23 && hora<=12) {
+		
+		if(formato == true && hora >= 0 && hora<=12) {
 			System.out.printf("%d/%d/%d %d:%d:%d AM %n", dia, mes, ano, hora, minuto, segundo);
 		}else if(formato == true && hora >= 0 && hora <= 23 && hora>12) {
 			System.out.printf("%d/%d/%d %d:%d:%d PM %n", dia, mes, ano, hora%12, minuto, segundo);
-		}
-		else if (formato == false && hora >= 0 && hora <= 23){
+		}else if (formato == false && hora>=0 && hora<23){
 			System.out.printf("%d/%d/%d %d:%d:%d %n", dia, mes, ano, hora%24, minuto, segundo);
-		} else {
+		}else if(hora == -1) {
 			System.out.printf("%d/%d/%d %n", dia, mes, ano);
 		}
 	}
-	
-	
 }
