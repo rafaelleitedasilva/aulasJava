@@ -4,8 +4,8 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		ConanBancaria conta1 = new ConanBancaria();
-		ConanBancaria conta2 = new ConanBancaria();
+		ConanBancaria conta1 = new ConanBancaria(true, 200, 213785);
+		ConanBancaria conta2 = new ConanBancaria(true, 1000, 3897);
 		
 		conta1.Receber(1000);
 		conta2.Receber(600);
