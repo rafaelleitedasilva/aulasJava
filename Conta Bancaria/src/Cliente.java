@@ -1,3 +1,4 @@
+import java.util.Objects;
 
 public class Cliente {
 	private String nome;
@@ -34,8 +35,29 @@ public class Cliente {
 
 	@Override
 	public String toString() {
-		return "Cliente [nome=" + nome + ", CPF=" + CPF + ", numConta=" + numConta + "]";
+		return "\nCliente: \nNome=" + nome + ",\nCPF=" + CPF + ",\nNúmero da Conta=" + numConta;
 	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(CPF, nome, numConta);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Cliente other = (Cliente) obj;
+		return CPF == other.CPF && Objects.equals(nome, other.nome) && numConta == other.numConta;
+	}
+	
+	
+	
+	
 	
 	
 }
