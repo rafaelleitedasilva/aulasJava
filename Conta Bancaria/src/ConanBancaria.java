@@ -5,12 +5,19 @@ public class ConanBancaria {
 	private double saldo;
 	private boolean ativo;
 	
-	//Isso faz com que a inicialização tenha um valor predefinido
 	public ConanBancaria() {
 		numConta = 1 ;
 		saldo = 1.0;
 		ativo = true;
 	}
+	
+	public ConanBancaria(boolean ativo, int numConta, double saldo) {
+		this.numConta = numConta;
+		this.saldo = saldo;
+		this.ativo = ativo;
+	}
+
+
 
 	//Método de receber
 	public void Receber(double valor){
