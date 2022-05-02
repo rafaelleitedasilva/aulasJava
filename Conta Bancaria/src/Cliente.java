@@ -31,6 +31,11 @@ public class Cliente {
 	public void setNumConta(int numConta) {
 		this.numConta = numConta;
 	}
+
+	@Override
+	public String toString() {
+		return "Cliente [nome=" + nome + ", CPF=" + CPF + ", numConta=" + numConta + "]";
+	}
 	
 	
 }

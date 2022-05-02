@@ -30,6 +30,8 @@ public class Main {
 		System.out.println(cliente.getNome());
 		System.out.println(cliente.getCPF());
 		System.out.println(cliente.getNumConta());
+		
+		System.out.println(cliente);
 	
 	}
 
