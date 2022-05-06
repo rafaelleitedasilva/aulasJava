@@ -10,7 +10,7 @@ public class Ponto3D extends Ponto2D{
 
 	@Override
 	public String toString() {
-		return "Ponto3D [x=" + x + ", y=" + y + ", z=" + z + "]";
+		return super.toString() + "[z=" + z + "]";
 	}
 	
 	

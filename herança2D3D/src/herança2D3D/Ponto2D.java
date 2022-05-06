@@ -11,7 +11,7 @@ public class Ponto2D{
 	}
 	@Override
 	public String toString() {
-		return "Ponto2D [x=" + x + ", y=" + y + "]";
+		return "[x=" + x + ", y=" + y + "]";
 	}
 	
 	
