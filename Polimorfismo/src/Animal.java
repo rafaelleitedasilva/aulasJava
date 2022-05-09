@@ -5,8 +5,4 @@ public class Animal {
 		System.out.println("Rrrrrr...");
 	}
 	
-	public void Morder() {
-		System.out.println("Nhac!!");
-	}
-	
 }
