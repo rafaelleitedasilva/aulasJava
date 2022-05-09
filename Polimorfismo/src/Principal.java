@@ -22,8 +22,6 @@ public class Principal {
 		if(a instanceof Cachorro) {
 			Cachorro c = (Cachorro) a;
 			c.Morder();
-		}else {
-			System.out.println("...");
 		}
 	}
 
