@@ -8,8 +8,10 @@ public class LeiteQuente extends Bebida {
 
 	@Override
 	public void prepara() {
-		// TODO Auto-generated method stub
-		super.prepara();
+		System.out.println("Pegar a caixa de leite");
+		System.out.println("Colocar o leite no copo");
+		System.out.println("Passar para o preparador!");
+		System.out.println("");
 	}
 
 	

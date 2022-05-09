@@ -7,6 +7,9 @@ public class Aplicacao {
 		Preparador barman = new Preparador();
 		Bebida leite = new LeiteQuente(true);
 		
+		leite.prepara();
+		refri.prepara();
+		
 		barman.prepararBebida(refri);
 		barman.prepararBebida(leite);
 	}
