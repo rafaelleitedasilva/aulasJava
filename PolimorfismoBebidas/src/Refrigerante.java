@@ -10,7 +10,6 @@ public class Refrigerante extends Bebida{
 		System.out.println("Pega a garrafa de refrigerante");
 		System.out.println("Coloca o refrigerante em um copo");
 		System.out.println("Adiciona gelo ao copo!");
-		System.out.println("");
 	}
 	
 	
