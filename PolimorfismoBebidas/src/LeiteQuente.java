@@ -9,7 +9,6 @@ public class LeiteQuente extends Bebida {
 	@Override
 	public void prepara() {
 		System.out.println("Pegar a caixa de leite");
-		System.out.println("Colocar o leite no copo");
 		System.out.println("Passar para o preparador!");
 	}
 
