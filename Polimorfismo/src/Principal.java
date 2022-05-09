@@ -12,6 +12,10 @@ public class Principal {
 		Gato gato = new Gato();
 		Cachorro cachorro = new Cachorro();
 		
+		//Como o método falar é estático eu consigo chamar ele sem precisar colocar oo tipo da classe.
+		//O paramêtro é a variável a do tipo Animal, dessa forma as classes filho (gato, cachorro) conseguer ser chamadas.
+		//A 
+		
 		falar(gato);
 		falar(cachorro);
 		
