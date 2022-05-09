@@ -2,20 +2,29 @@
 public class Principal {
 
 	public static void main(String[] args) {
-		
-//		Gato gato = new Gato();
-		//Generic class
+
 		Animal animal = new Cachorro();
-//		Cachorro cao = new Cachorro();		
-//		gato.Falar();
-//		cao.Falar();
-//		cao.Morder();
 		animal.Falar();
 		
-//		Poliformism
 		animal = new Gato();
 		animal.Falar();
 		
+		Gato gato = new Gato();
+		Cachorro cachorro = new Cachorro();
+		
+		falar(gato);
+		falar(cachorro);
+		
+		}
+	
+	public static void falar(Animal a) {
+		a.Falar();
+		if(a instanceof Cachorro) {
+			Cachorro c = (Cachorro) a;
+			c.Morder();
+		}else {
+			System.out.println("...");
+		}
 	}
 
 }
