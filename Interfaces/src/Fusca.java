@@ -1,5 +1,5 @@
 
-public class Fusca implements Automovel{
+public class Fusca implements Carro{
 
 	@Override
 	public void virarEsquerda() {
@@ -27,9 +27,9 @@ public class Fusca implements Automovel{
 	}
 
 	@Override
-	public void darRe() {
-		// TODO Auto-generated method stub
-		System.out.println("Fusca due ré");
+	public void abrirPorta() {
+		System.out.println("Abrir porta");
+		
 	}
-	
+
 }

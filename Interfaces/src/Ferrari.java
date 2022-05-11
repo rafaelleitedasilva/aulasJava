@@ -1,4 +1,4 @@
-public class Ferrari implements Automovel{
+public class Ferrari implements Carro{
 
 	@Override
 	public void virarEsquerda() {
@@ -32,10 +32,10 @@ public class Ferrari implements Automovel{
 	}
 
 	@Override
-	public void darRe() {
+	public void abrirPorta() {
 		// TODO Auto-generated method stub
-		System.out.println("A Ferrari deu ré");
-		
+		System.out.println("Abrir porta!");
 	}
+
 	
 }

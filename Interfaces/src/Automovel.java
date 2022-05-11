@@ -4,5 +4,5 @@ public interface Automovel {
 	void virarDireita();
 	void acelerar();
 	void freiar();
-	void darRe();
+	public void abrirPorta();
 }
