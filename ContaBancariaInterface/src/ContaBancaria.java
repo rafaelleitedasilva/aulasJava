@@ -2,6 +2,14 @@
 public class ContaBancaria {
 	protected double saldo = 1000;
 
+	public double getSaldo() {
+		return saldo;
+	}
+
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+
 	public void depositar(double valor){
 		saldo +=valor;
 	}
@@ -10,9 +18,9 @@ public class ContaBancaria {
 		saldo -= valor;
 	}
 	
-	public void trasnferir(double valor, double valor2){
+	public void trasnferir(double valor, ContaBancaria conta){
 		saldo -= valor;
-		valor2 += valor;
+		conta.depositar(valor);
 	}
 	
 	public double CalcularSaldo() {

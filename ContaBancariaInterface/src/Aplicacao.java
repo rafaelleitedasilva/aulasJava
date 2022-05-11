@@ -10,15 +10,17 @@ public class Aplicacao {
 		System.out.printf("O saldo na conta corrente é equivalente a: R$%.2f%n", ContaCorrente.CalcularSaldo());
 		System.out.printf("O saldo na conta investimento é equivalente a: R$%.2f%n%n", ContaInvestimento.CalcularSaldo());
 			
-		Conta.depositar(200);
+		ContaCorrente.depositar(200);
+		ContaInvestimento.depositar(200);
 		System.out.printf("O saldo na conta corrente é equivalente a: R$%.2f%n", ContaCorrente.CalcularSaldo());
 		System.out.printf("O saldo na conta investimento é equivalente a: R$%.2f%n%n", ContaInvestimento.CalcularSaldo());
 		
-		Conta.sacar(1000);
+		ContaCorrente.sacar(100);
+		ContaInvestimento.sacar(100);
 		System.out.printf("O saldo na conta corrente é equivalente a: R$%.2f%n", ContaCorrente.CalcularSaldo());
 		System.out.printf("O saldo na conta investimento é equivalente a: R$%.2f%n%n", ContaInvestimento.CalcularSaldo());
 		
-		ContaInvestimento.trasnferir(200, ContaCorrente.saldo);
+		ContaInvestimento.trasnferir(200, ContaCorrente);
 		System.out.printf("O saldo na conta corrente é equivalente a: R$%.2f%n", ContaCorrente.CalcularSaldo());
 		System.out.printf("O saldo na conta investimento é equivalente a: R$%.2f%n%n", ContaInvestimento.CalcularSaldo());
 		
