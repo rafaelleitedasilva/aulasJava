@@ -6,6 +6,7 @@ public class Rota {
 		automovel.virarEsquerda();
 		automovel.acelerar();
 		automovel.freiar();
+		System.out.println("");
 		
 	}
 	
