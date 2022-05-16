@@ -1,12 +1,8 @@
 
 public class ContaInvestimento extends ContaBancaria{
 	
-	ContaBancaria ContaBancaria = new ContaBancaria();
-	private double saldo = ContaBancaria.getSaldo()/2;
+	private double saldo = 0;
 	
-	public double getSaldo() {
-		return saldo;
-	}
 
 	public void setSaldo(double saldo) {
 		this.saldo = saldo;

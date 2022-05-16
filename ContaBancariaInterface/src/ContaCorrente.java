@@ -1,14 +1,7 @@
 
 public class ContaCorrente extends ContaBancaria{
 	
-	ContaBancaria ContaBancaria = new ContaBancaria();
-	private double saldo = ContaBancaria.getSaldo()/2;
-	
-	
-
-	public double getSaldo() {
-		return saldo;
-	}
+	private double saldo = ContaBancaria.getSaldo();
 
 	public void setSaldo(double saldo) {
 		this.saldo = saldo;

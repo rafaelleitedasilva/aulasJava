@@ -1,13 +1,13 @@
 
-public class ContaBancaria {
-	protected double saldo = 1000;
+public abstract class ContaBancaria {
+	protected static double saldo = 1000;
 
-	public double getSaldo() {
+	public static double getSaldo() {
 		return saldo;
 	}
 
 	public void setSaldo(double saldo) {
-		this.saldo = saldo;
+		ContaBancaria.saldo = saldo;
 	}
 
 	public void depositar(double valor){
@@ -23,7 +23,5 @@ public class ContaBancaria {
 		conta.depositar(valor);
 	}
 	
-	public double CalcularSaldo() {
-		return 0;
-	}
+	public abstract double CalcularSaldo();
 }

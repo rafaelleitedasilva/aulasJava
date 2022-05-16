@@ -2,8 +2,10 @@
 public class Aplicacao {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		ContaBancaria Conta = new ContaBancaria();
+		//Na minha aplicação eu deduzi que as contas investimento e corrente faziam parte de uma mesma conta bancária, ou seja
+		//a pessoa que fosse dona de uma conta bancária teria que necessariamente ter uma conta investimento e uma conta corrente
+		//por conta disso, a conta investimento inicia com saldo nulo, e a conta corrente inicia com o saldo igual ao da conta corrente.
+		
 		ContaBancaria ContaCorrente = new ContaCorrente();
 		ContaBancaria ContaInvestimento = new ContaInvestimento();
 		
