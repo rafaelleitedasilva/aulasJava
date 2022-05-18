@@ -132,26 +132,66 @@ public class Main {
 //			System.out.println("Valor do Índice: " + aux1 + " = " + nome[aux1]);
 //			
 //		}
-		
-		int[] arrayInt = new int[5];
-		String[] arrayString = new String[2];
-		double[] arrayDouble = new double[4];
-		
-		arrayInt[3] = 4;
-		int[] numero = new int[6];
-		
-		Scanner teclado = new Scanner(System.in);
-		
-		for(int aux2 = 0; aux2<numero.length;aux2++) {
-			System.out.printf("Digite um número qualquer:");
-			numero[aux2] = teclado.nextInt();
-		}
-		
-		System.out.println("");
-		for(int aux2 = 0; aux2<numero.length;aux2++) {
-			System.out.println("Valor do Índice: " + aux2 + " = " + numero[aux2]);
+//		
+//		int[] arrayInt = new int[5];
+//		String[] arrayString = new String[2];
+//		double[] arrayDouble = new double[4];
+//		
+//		arrayInt[3] = 4;
+//		int[] numero = new int[6];
+//		
+//		Scanner teclado = new Scanner(System.in);
+//		
+//		for(int aux2 = 0; aux2<numero.length;aux2++) {
+//			System.out.printf("Digite um número qualquer:");
+//			numero[aux2] = teclado.nextInt();
+//		}
+//		
+//		System.out.println("");
+//		for(int aux2 = 0; aux2<numero.length;aux2++) {
+//			System.out.println("Valor do Índice: " + aux2 + " = " + numero[aux2]);
+//
+//		}
 
+		
+		
+		//Como o arrayObject é do tipo Object ele herda da classe pai
+		//isso significa que arrayObject aceitar qualquer tipo de valor
+
+//		obj[2] = 12;
+//
+//		
+//		Object[] arrayObject = new Object[5];
+//		arrayObject[0] = 18;
+//		arrayObject[1] = "Rafael";
+//		arrayObject[2] = 1.89;
+//		arrayObject[3] = true;
+//		arrayObject[4] = obj[2];
+//		
+//		for(int aux2 = 0; aux2<arrayObject.length;aux2++) {
+//			System.out.println("Valor do Índice: " + aux2 + " = " + arrayObject[aux2]);
+//
+//		}
+		
+		//O array Bidirecional permite criar linhas e colunas!
+		int[][] arrayBidirecional = new int[3][5];
+		arrayBidirecional[0][3] = 7;
+		arrayBidirecional[2][1] = 2;
+		
+		//Usamos dois for um para linha e outro para coluna
+		for(int linha = 0; linha<arrayBidirecional.length;linha++) {
+			//arrayBidirecional[0] faz com que a gente pegue o valor da coluna
+			for(int coluna = 0; coluna<arrayBidirecional[0].length;coluna++) {
+				System.out.printf("Matriz%dx%d = %d %n",linha,coluna, arrayBidirecional[linha][coluna]);
+			}
+			System.out.println();
 		}
+		
+		
+		
+		
+		
+		
 	}
 
 }
