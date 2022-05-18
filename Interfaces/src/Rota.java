@@ -1,5 +1,7 @@
 
 public class Rota {
+	
+	//Método que vai gerar a rota do Automovel
 	public void rotaAlmanaque(Automovel automovel) {
 		
 		automovel.abrirPorta();

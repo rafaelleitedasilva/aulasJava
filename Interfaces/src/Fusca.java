@@ -1,13 +1,13 @@
 
 public class Fusca implements Carro{
 
+	//Override de todos os métodos de Carro que extends de Automovel
 	@Override
 	public void virarEsquerda() {
 		// TODO Auto-generated method stub
 		System.out.println("Fusca virou a esquerda");
-		
 	}
-
+	
 	@Override
 	public void virarDireita() {
 		// TODO Auto-generated method stub

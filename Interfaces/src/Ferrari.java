@@ -1,5 +1,9 @@
 public class Ferrari implements Carro, ItemCaro{
-
+	int velocidade;
+	
+	//Override de todos os métodos de Carro que extends de Automovel
+	//E override de ItemCaro que obriga a implementação de getPreco()
+	
 	@Override
 	public void virarEsquerda() {
 		// TODO Auto-generated method stub
