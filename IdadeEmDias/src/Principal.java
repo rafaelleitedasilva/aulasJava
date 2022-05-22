@@ -5,14 +5,15 @@ public class Principal {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner entrada = new Scanner(System.in);
-		System.out.println("Digite quantos anos você têm: ");
+		System.out.println("Digite quantos anos vocï¿½ tï¿½m: ");
 		int anos = entrada.nextInt();
-		System.out.println("Digite quantos meses de vida você têm: ");
+		System.out.println("Digite quantos meses de vida vocï¿½ tï¿½m: ");
 		int meses = entrada.nextInt();
-		System.out.println("Digite quantos dias de vida você têm: ");
+		System.out.println("Digite quantos dias de vida vocï¿½ tï¿½m: ");
 		int dias = entrada.nextInt();
 		
-		System.out.printf(" Você tem %d anos %d meses e %d dias, completando: %d dias", anos, meses, dias, (anos*365)+(meses*30)+dias);
+		//Pega os valores das variaveis anos, meses e dias e realiza a conversÃ£o para o total de dias
+		System.out.printf(" Vocï¿½ tem %d anos %d meses e %d dias, completando: %d dias", anos, meses, dias, (anos*365)+(meses*30)+dias);
 	}
 
 }

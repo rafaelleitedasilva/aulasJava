@@ -1,6 +1,7 @@
-package herança2D3D;
+package heranï¿½a2D3D;
 
 public class Ponto2D{
+	//Atributos protegidos dessa classe que podem ser acessados por herdeiros
 	protected double x;
 	protected double y;
 	
