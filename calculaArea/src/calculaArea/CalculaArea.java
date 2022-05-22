@@ -1,6 +1,7 @@
 package calculaArea;
 
 public class CalculaArea {
+	//Cada um dos métodos retorna o valor da área calculada
 	int calculaAe(int x, int y) {
 		return x*y;
 	}

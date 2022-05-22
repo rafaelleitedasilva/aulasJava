@@ -8,11 +8,13 @@ public class Quadrado implements AreaCalculavel{
 	}
 
 
+	//Método da circunferência que seta o lado
 	public void setLado(double lado) {
 		this.lado = lado;
 	}
 
 
+	//Override da assinatura de método na interface
 	@Override
 	public double CalculaArea() {
 		// TODO Auto-generated method stub

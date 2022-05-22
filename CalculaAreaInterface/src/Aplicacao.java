@@ -3,19 +3,21 @@ public class Aplicacao {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		//Instanciando todas as classes
 		Quadrado quadrado = new Quadrado();
 		Triangulo triangulo = new Triangulo();
 		Circunferencia circunferencia = new Circunferencia();
 		
+		//Setando os valores e realizando o calculo com o mÃ©todo da interface no qual foi feito um override
 		quadrado.setLado(20);
-		System.out.println("A área do quadrado é: "+ quadrado.CalculaArea());
+		System.out.println("A ï¿½rea do quadrado ï¿½: "+ quadrado.CalculaArea());
 		
 		triangulo.setAltura(10);
 		triangulo.setBase(20);
-		System.out.println("A área do triângulo é: "+ triangulo.CalculaArea());
+		System.out.println("A ï¿½rea do triï¿½ngulo ï¿½: "+ triangulo.CalculaArea());
 		
 		circunferencia.setRaio(12);
-		System.out.println("A área da circunferência é: "+ circunferencia.CalculaArea());
+		System.out.println("A ï¿½rea da circunferï¿½ncia ï¿½: "+ circunferencia.CalculaArea());
 	}
 
 }

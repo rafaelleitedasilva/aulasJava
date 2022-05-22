@@ -1,38 +1,50 @@
 package calculaArea;
 
+//fazendo a importaÃ§Ã£o da biblioteca 
 import java.util.Scanner;
 
 public class Aplicacao {
 
 	public static void main(String[] args) {
 		
+		//Criando o objeto teclado que vai permitir o input de valores
 		Scanner teclado = new Scanner(System.in);
+		//Instanciando a classe CalculaArea
 		CalculaArea A = new CalculaArea();
 		
-		System.out.println("Você quer calcular a área de qual figura ? ");
+		//Pergunta qual figura quer calcular Ã¡rea
+		System.out.println("Vocï¿½ quer calcular a ï¿½rea de qual figura ? ");
 		System.out.println("1 - Quadrado");
-		System.out.println("2 - Retângulo");
-		System.out.println("3 - Triângulo");
+		System.out.println("2 - Retï¿½ngulo");
+		System.out.println("3 - Triï¿½ngulo");
 		int resposta = teclado.nextInt();
 		
+		//Pega o valor da variÃ¡vel resposta e dependendo do valor retorna o calculo da Ã¡rea
 		if(resposta == 1) {
-			int x = teclado.nextInt();
 			System.out.println("Digite o lado x do quadrado: ");
+			//Pegando o valor do lado do quadrado
+			int x = teclado.nextInt();
 			System.out.println("Resultado: ");
+			//Realizando o calculo da area e mostrando
 			A.calculaAe(x);
 			
 		}else if(resposta == 2) {
-			System.out.println("Digite o lado x do retângulo: ");
+			//Nesse caso como estamos trantando de uma figura com dois lados diferente precisamos de duas variÃ¡veis
+			System.out.println("Digite o lado x do retï¿½ngulo: ");
 			int x = teclado.nextInt();
-			System.out.println("Digite o lado y do retângulo: ");
+			System.out.println("Digite o lado y do retï¿½ngulo: ");
 			int y = teclado.nextInt();
 			System.out.println("Resultado: ");
+			//Realizando o calculo e mostrando o resultado
 			A.calculaAe(x, y);
 			
 		}else {
-			System.out.println("Digite a base do triângulo: ");
+			//Caso a resposta nÃ£o seja nem 1, nem 2, o programa realiza o calculo do triÃ¢ngulo
+			//Caso fosse pedido poderÃ­amos usar o else como uma medida de prevenÃ§Ã£o, para garantir 
+			//1ue o usuÃ¡rio sempre selecionasse uma das tÃªs figuras!
+			System.out.println("Digite a base do triï¿½ngulo: ");
 			double x = teclado.nextInt();
-			System.out.println("Digite a altura do triângulo: ");
+			System.out.println("Digite a altura do triï¿½ngulo: ");
 			double y = teclado.nextInt();
 			System.out.println("Resultado: ");
 			A.calculaAe(x, y);
@@ -45,21 +57,21 @@ public class Aplicacao {
 		//int q1 = teclado.nextInt();
 		//System.out.printf("y:");
 		//int q2 = teclado.nextInt();
-		//System.out.printf("A área do quadrado é: %d%n", q1*q2);
+		//System.out.printf("A ï¿½rea do quadrado ï¿½: %d%n", q1*q2);
 		
-		//System.out.printf("Digite os lados do retângulo: %n");
+		//System.out.printf("Digite os lados do retï¿½ngulo: %n");
 		//System.out.printf("x:");
 		//int r1 = teclado.nextInt();
 		//System.out.printf("y:");
 		//int r2 = teclado.nextInt();
-		//System.out.printf("A área do retângulo é: %d %n", r1*r2);
+		//System.out.printf("A ï¿½rea do retï¿½ngulo ï¿½: %d %n", r1*r2);
 		
-		//System.out.printf("Digite os paramêtros do triângulo: %n");
+		//System.out.printf("Digite os paramï¿½tros do triï¿½ngulo: %n");
 		//System.out.printf("Base:");
 		//int tb = teclado.nextInt();
 		//System.out.printf("Altura:");
 		//int th = teclado.nextInt();
-		//System.out.printf("A área do triângulo é: %d", (tb*th)/2);
+		//System.out.printf("A ï¿½rea do triï¿½ngulo ï¿½: %d", (tb*th)/2);
 		
 		
 	}
