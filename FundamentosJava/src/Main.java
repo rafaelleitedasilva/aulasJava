@@ -3,13 +3,14 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-	
+	//FUNDAMENTOS JAVA Ã‰ UMA PASTA COM DIVERSOS CONCEITOS DE JAVA, ALGUNHS SIMPLES, OUTROS MAIS COMPLEXOS
 //		int x = 100;
 //		double y = 200.3;
 //
 //		int a = 0;
 //		double b = 0;
 //
+		//Casting Ã­mplicito de um valor
 //		short z = (short) 100000;
 //
 //		a = (int) y; // Casting implicit
@@ -23,41 +24,41 @@ public class Main {
 //		int idadePessoa = 60;
 //
 //		if (idadePessoa < 18) {
-//			System.out.println("Você não pode beber!");
+//			System.out.println("Vocï¿½ nï¿½o pode beber!");
 //		} else if (idadePessoa >= 60) {
-//			System.out.println("Você é muito velho! Pare de beber!");
+//			System.out.println("Vocï¿½ ï¿½ muito velho! Pare de beber!");
 //		} else {
-//			System.out.println("Você pode beber!");
+//			System.out.println("Vocï¿½ pode beber!");
 //		}
 //
-//		System.out.println("Você tem " + idadePessoa + " anos \n");
+//		System.out.println("Vocï¿½ tem " + idadePessoa + " anos \n");
 //
 //		int dia = 10;
-//
+		//O switch Ã© uma forma alternativa de realizar um teste condicional e retornar um valor caso o teste seja true
 //		switch (dia) {
 //		case 1:
-//			System.out.println("Hoje é domingo");
+//			System.out.println("Hoje ï¿½ domingo");
 //			break;
 //		case 2:
-//			System.out.println("Hoje é segunda-feira");
+//			System.out.println("Hoje ï¿½ segunda-feira");
 //			break;
 //		case 3:
-//			System.out.println("Hoje é terça-feira");
+//			System.out.println("Hoje ï¿½ terï¿½a-feira");
 //			break;
 //		case 4:
-//			System.out.println("Hoje é quarta-feira");
+//			System.out.println("Hoje ï¿½ quarta-feira");
 //			break;
 //		case 5:
-//			System.out.println("Hoje é quinta-feira");
+//			System.out.println("Hoje ï¿½ quinta-feira");
 //			break;
 //		case 6:
-//			System.out.println("Hoje é sexta-feira");
+//			System.out.println("Hoje ï¿½ sexta-feira");
 //			break;
 //		case 7:
-//			System.out.println("Hoje é sábado");
+//			System.out.println("Hoje ï¿½ sï¿½bado");
 //			break;
 //		default:
-//			System.out.println("Esse dia não existe! Tá maluco pô");
+//			System.out.println("Esse dia nï¿½o existe! Tï¿½ maluco pï¿½");
 //		}
 //		
 //		char caractere = '2';
@@ -80,13 +81,13 @@ public class Main {
 //			System.out.println("Prossiga");
 //			break;
 //		case "Amarelo":
-//			System.out.println("Atenção!");
+//			System.out.println("Atenï¿½ï¿½o!");
 //			break;
 //		case "Vermelho":
 //			System.out.println("Pare!");
 //			break;
 //		default:
-//			System.out.println("Que cor é essa ai? Conheço não");
+//			System.out.println("Que cor ï¿½ essa ai? Conheï¿½o nï¿½o");
 //		}
 //
 //		int x = 0;
@@ -104,7 +105,7 @@ public class Main {
 //		} while (x < 10);
 //	
 //		Scanner entrada = new Scanner(System.in);
-//		System.out.println("Digite o número que você deseja saber a tabuada");
+//		System.out.println("Digite o nï¿½mero que vocï¿½ deseja saber a tabuada");
 //		int x = entrada.nextInt();
 //		
 //		for(int y=1; y<=10; y++) {
@@ -116,7 +117,7 @@ public class Main {
 //		};
 //		
 //		for(int aux = 0; aux<x.length;aux++) {
-//			System.out.println("Valor do Índice: " + aux + " = " + x[aux]);
+//			System.out.println("Valor do ï¿½ndice: " + aux + " = " + x[aux]);
 //		}
 //		
 //		
@@ -129,7 +130,7 @@ public class Main {
 //			};
 //		 
 //		for(int aux1 = 0; aux1<nome.length;aux1++) {
-//			System.out.println("Valor do Índice: " + aux1 + " = " + nome[aux1]);
+//			System.out.println("Valor do ï¿½ndice: " + aux1 + " = " + nome[aux1]);
 //			
 //		}
 //		
@@ -143,19 +144,19 @@ public class Main {
 //		Scanner teclado = new Scanner(System.in);
 //		
 //		for(int aux2 = 0; aux2<numero.length;aux2++) {
-//			System.out.printf("Digite um número qualquer:");
+//			System.out.printf("Digite um nï¿½mero qualquer:");
 //			numero[aux2] = teclado.nextInt();
 //		}
 //		
 //		System.out.println("");
 //		for(int aux2 = 0; aux2<numero.length;aux2++) {
-//			System.out.println("Valor do Índice: " + aux2 + " = " + numero[aux2]);
+//			System.out.println("Valor do ï¿½ndice: " + aux2 + " = " + numero[aux2]);
 //
 //		}
 
 		
 		
-		//Como o arrayObject é do tipo Object ele herda da classe pai
+		//Como o arrayObject ï¿½ do tipo Object ele herda da classe pai
 		//isso significa que arrayObject aceitar qualquer tipo de valor
 
 //		obj[2] = 12;
@@ -169,7 +170,7 @@ public class Main {
 //		arrayObject[4] = obj[2];
 //		
 //		for(int aux2 = 0; aux2<arrayObject.length;aux2++) {
-//			System.out.println("Valor do Índice: " + aux2 + " = " + arrayObject[aux2]);
+//			System.out.println("Valor do ï¿½ndice: " + aux2 + " = " + arrayObject[aux2]);
 //
 //		}
 		

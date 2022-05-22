@@ -2,6 +2,8 @@
 public class Aplicacao {
 
 	public static void main(String[] args) {
+	//MESMO EXERCÍCIO DATAHORA SÓ QUE COM A RESPOSTA DO PROFESSOR
+	//NÃO IREI COMENTAR NOVAMENTE PORQUE JÁ FIZ ISSO NO MEU MODELO
 	
 		Data d1 = new Data(10, 03, 2000, 0, 30, 10);
 		d1.imprimir(Data.FORMATO_12H);
