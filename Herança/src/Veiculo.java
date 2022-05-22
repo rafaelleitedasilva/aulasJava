@@ -1,11 +1,14 @@
 
 public class Veiculo {
-	
+	//Como todas as outras classes herdam de Veiculo
+	//todas as outras classes podem fazer o override dos seus métodos
+	//ou ter acesso a atributos tipo "protected"
 	private String nome = "teste";
 	protected String modelo;
 	protected int ano;
 	protected String marca;
 	
+	//Métodos que serão herdados pelas classes
 	public void buzinar() {
 		System.out.printf("BI FON!%n%n");
 	}
