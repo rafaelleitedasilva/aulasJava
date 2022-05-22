@@ -1,11 +1,12 @@
 
 public class Motocicleta extends Veiculo {
+	//Todas as classes QUE EXTENDEM de veÃ­culo possuem um override de isLigado
 	@Override
 	public boolean isLigado() {
 		if (super.isLigado()==true) {
-			System.out.println("A motocicleta está ligada.");
+			System.out.println("A motocicleta estï¿½ ligada.");
 		} else {
-			System.out.println("A motocicleta está desligada.");
+			System.out.println("A motocicleta estï¿½ desligada.");
 		}
 		return true;
 	}
