@@ -1,6 +1,9 @@
 
 public class ConanBancaria {
 	
+	//Atributos privados da conta bancÃ¡ria que serÃ£o acessados
+	//por mÃ©todos.
+
 	private int numConta;
 	private double saldo;
 	private boolean ativo;
@@ -11,6 +14,7 @@ public class ConanBancaria {
 		ativo = true;
 	}
 	
+	//Personalizando o contrutor de ConanBancaria(), para que alguns valores jÃ¡ sejam setados na instÃ¢ncia
 	public ConanBancaria(boolean ativo, int numConta, double saldo) {
 		this.numConta = numConta;
 		this.saldo = saldo;
@@ -19,23 +23,23 @@ public class ConanBancaria {
 
 
 
-	//Método de receber
+	//Mï¿½todo de receber
 	public void Receber(double valor){
 		saldo += valor;
 		
 	}
 	
-	//Método de Ver
+	//Mï¿½todo de Ver
 	public double Ver() {
 		return saldo;
 	}
 	
-	//Método de Dar
+	//Mï¿½todo de Dar
 	public void Dar(double valor) {
 		if (saldo >= valor) {
 		saldo -= valor;
 		} else {
-			System.out.println("Você não tem dinheiro suficiente na conta!");
+			System.out.println("Vocï¿½ nï¿½o tem dinheiro suficiente na conta!");
 		}
 	}
 	

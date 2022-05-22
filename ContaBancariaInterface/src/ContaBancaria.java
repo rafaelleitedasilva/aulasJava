@@ -1,5 +1,6 @@
 
 public abstract class ContaBancaria {
+	//A conta bancaria já começa com 1000, mas seria possível colocar o construtor para que  
 	protected static double saldo = 1000;
 
 	public static double getSaldo() {

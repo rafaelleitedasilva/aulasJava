@@ -1,10 +1,14 @@
 import java.util.Objects;
 
 public class Cliente {
+
+	//Atributos do cliente
+
 	private String nome;
 	private int CPF;
 	private int numConta;
 	
+	//Criando os métodos para a crianção de um cliente
 	public Cliente() {
 		
 	}
@@ -33,16 +37,20 @@ public class Cliente {
 		this.numConta = numConta;
 	}
 
+	//Fazendo o override de classes inerentes ao objeto pai (Object)
+	//Formatando o toString() para mostrar os valores do Cliente e não seu endereço
 	@Override
 	public String toString() {
-		return "\nCliente: \nNome=" + nome + ",\nCPF=" + CPF + ",\nN�mero da Conta=" + numConta;
+		return "\nCliente: \nNome=" + nome + ",\nCPF=" + CPF + ",\nN�mero da Conta=" + numConta;
 	}
 
 	@Override
 	public int hashCode() {
 		return Objects.hash(CPF, nome, numConta);
 	}
+	
 
+	//Fazendo o override de equals() para que ele compare os atributos de dois objetos tipo Cliente()
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
