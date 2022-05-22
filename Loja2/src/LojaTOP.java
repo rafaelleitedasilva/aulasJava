@@ -7,36 +7,37 @@ public class LojaTOP {
 		String nome1, nome2;
 		Scanner teclado = new Scanner(System.in);
 		
-		//SELEÇÃO DOS PRODUTOS
+		//SELEï¿½ï¿½O DOS PRODUTOS
 		System.out.println("Bem-vindo a nossa loja!");
 		System.out.println("");
-		System.out.println("Veja as nossas opções de produtos: ");
-		System.out.println(" 1-Camiseta \n 2-Calça \n 3-Relógio \n 4-Chapéu");
+		System.out.println("Veja as nossas opï¿½ï¿½es de produtos: ");
+		System.out.println(" 1-Camiseta \n 2-Calï¿½a \n 3-Relï¿½gio \n 4-Chapï¿½u");
 		System.out.print("Escolha o seu primeiro produto: ");
 		opcao1 = teclado.nextInt();
 		System.out.print("Escolha o seu segundo produto: ");
 		opcao2 = teclado.nextInt();
 		
+		//SELECIONANDO O PRODUTO
 		if(opcao1 == 1){
 			 nome1 = "Camiseta";
 		} else if (opcao1 == 2) {
-			 nome1 = "Calça";
+			 nome1 = "Calï¿½a";
 		} else if (opcao1 == 3) {
-			 nome1 = "Relógio";
+			 nome1 = "Relï¿½gio";
 		} else {
-			 nome1 = "Chapéu";
+			 nome1 = "Chapï¿½u";
 		}
 		
 	
-		
+		//SELECIONANDO O SEGUNDO PRODUTO
 		if(opcao2 == 1){
 			 nome2 = "Camiseta";
 		} else if (opcao2 == 2) {
-			 nome2 = "Calça";
+			 nome2 = "Calï¿½a";
 		} else if (opcao2 == 3) {
-			 nome2 = "Relógio";
+			 nome2 = "Relï¿½gio";
 		} else {
-			 nome2 = "Chapéu";
+			 nome2 = "Chapï¿½u";
 		}
 		
 		//VALOR DOS PRODUTOS
@@ -48,19 +49,19 @@ public class LojaTOP {
 		 
 		 //MOSTRA AS CATEGORIAS
 		 if(opcao1==opcao2) {
-			 System.out.println("Você escolheu o produto da categoria: " + nome1 ); 
+			 System.out.println("Vocï¿½ escolheu o produto da categoria: " + nome1 ); 
 		 } else {
-			 System.out.println("Você escolheu os produtos das categorias: " + nome1 + " e " + nome2 + "\0");
+			 System.out.println("Vocï¿½ escolheu os produtos das categorias: " + nome1 + " e " + nome2 + "\0");
 		 }
 		 
 		 System.out.println("");
 		 
 		 //MOSTRA O VALOR A SER PAGO
 		 if(opcao1==2 || opcao2==2) {
-		System.out.println("O valor do seu desconto é de 15%, dessa forma \n o valor que era R$" + Total + " passa a ser R$" + Total*0.85);
+		System.out.println("O valor do seu desconto ï¿½ de 15%, dessa forma \n o valor que era R$" + Total + " passa a ser R$" + Total*0.85);
 		 } else {
-			 System.out.println("Como você não escolheu uma peça de calça, não terá desconto!");
-			 System.out.println("O valor que terá que pagar é R$" + Total);
+			 System.out.println("Como vocï¿½ nï¿½o escolheu uma peï¿½a de calï¿½a, nï¿½o terï¿½ desconto!");
+			 System.out.println("O valor que terï¿½ que pagar ï¿½ R$" + Total);
 			 
 		 }
 	}

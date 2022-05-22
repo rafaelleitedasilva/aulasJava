@@ -3,29 +3,29 @@ import java.util.Scanner;
 public class Calculadora {
 
 	public static void main(String[] args) {
-		
+		//MAIS UMA CALCULADORA QUE SOMA, SUBTRAI, DIVIDE E MULTIPLICA DOIS VALORES
 		double numero1 = 5;double numero2 = 2;
 		double resultSum;double resultSub;double resultDiv;double resultMult;
 		
 		Scanner teclado = new Scanner(System.in);
 		
-		System.out.print("Digite o primeiro número: ");
+		System.out.print("Digite o primeiro nï¿½mero: ");
 		numero1 = teclado.nextInt();
-		System.out.print("Digite o segundo número: ");
+		System.out.print("Digite o segundo nï¿½mero: ");
 		numero2 = teclado.nextInt();
 				
 
 		resultSum = numero1 + numero2;
-		System.out.println("O resultado da soma é: " + resultSum);
+		System.out.println("O resultado da soma ï¿½: " + resultSum);
 	
 		resultSub = numero1 - numero2;
-		System.out.println("O resultado da subtração é: " + resultSub);
+		System.out.println("O resultado da subtraï¿½ï¿½o ï¿½: " + resultSub);
 	
 		resultDiv = numero1 / numero2;
-		System.out.println("O resultado da divisão é: " + resultDiv);
+		System.out.println("O resultado da divisï¿½o ï¿½: " + resultDiv);
 		
 		resultMult = numero1 * numero2;
-		System.out.println("O resultado da multiplicação é: " + resultMult);
+		System.out.println("O resultado da multiplicaï¿½ï¿½o ï¿½: " + resultMult);
 
 	}
 }

@@ -6,6 +6,7 @@ public class Main {
 		Lampada lampada1 = new Lampada(true);
 		Lampada lampada2 = new Lampada(false);
 		
+		//Fazendo testes com as duas lampadas e imprimindo os resultados
 		lampada1.Imprimir();
 		lampada1.Desligar();
 		lampada1.Imprimir();

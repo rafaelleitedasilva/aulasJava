@@ -8,14 +8,14 @@ public class main {
 		//Adicionando classes wraps para que o tipo Object possa ser tratado como inteiro.
 		List<Integer> lista = new ArrayList<Integer>();
 //		
-		//Adicionando valores na lista, como ela é uma classe o modo de adicionar é por meio de um método
+		//Adicionando valores na lista, como ela ï¿½ uma classe o modo de adicionar ï¿½ por meio de um mï¿½todo
 //		
 //		lista.add("abc");
 //		lista.add(12);
 //		lista.add(true);
 //		
 //		
-		//Agora ao invés de length utilizamos o método size para saber o tamanho da lista
+		//Agora ao invï¿½s de length utilizamos o mï¿½todo size para saber o tamanho da lista
 //		
 //		for(int x=0; x<lista.size(); x++) {
 //			System.out.println(lista.get(x));
@@ -23,14 +23,14 @@ public class main {
 //		
 //		System.out.println("________");
 //		
-		//for enhanced é uma forma mais simplificada de passar pelos valores da array list
+		//for enhanced ï¿½ uma forma mais simplificada de passar pelos valores da array list
 //		
 //		for(Object valor : lista) {
 //			System.out.println(valor);
 //		}
 //		
-		//Como lista é uma classe quando removemos um elemento ela não fica nula ou mostra '0'
-		//pq a remoção é dinâmica.
+		//Como lista ï¿½ uma classe quando removemos um elemento ela nï¿½o fica nula ou mostra '0'
+		//pq a remoï¿½ï¿½o ï¿½ dinï¿½mica.
 //		
 //		lista.remove(1);
 //		
@@ -42,13 +42,13 @@ public class main {
 //			lista.add(x, x);
 //		}
 //		
-		//lista.set() seta um valor em uma posição específica
+		//lista.set() seta um valor em uma posiï¿½ï¿½o especï¿½fica
 //		
 //		lista.set(13, 1238);
 //		
 //		
 //		
-		//lista.add() adiciona um valo na lista e empurra os valores depois para posições posteriores
+		//lista.add() adiciona um valo na lista e empurra os valores depois para posiï¿½ï¿½es posteriores
 //		
 //		lista.add(12, 236544);
 //		
@@ -57,14 +57,17 @@ public class main {
 //			
 //		}
 		
-		Conta conta1 = new Conta("Água", 60);
+
+		Conta conta1 = new Conta("ï¿½gua", 60);
 		Conta conta2 = new Conta("Luz", 120);
 		
+		//Criando uma lista de contas e adicioando conta1 e conta2
 		List<Conta> listaDeContas = new ArrayList<Conta>();
 		
 		listaDeContas.add(conta1);
 		listaDeContas.add(conta2);
 		
+		//Imprimindo os elementos dentro da listaDeContas
 		for(Conta valor: listaDeContas) {
 			System.out.println(valor);
 		}

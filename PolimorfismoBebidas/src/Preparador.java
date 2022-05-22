@@ -1,6 +1,7 @@
 
 public class Preparador {
 	
+	//Preparador responsável por iniciar a preparação da bebida colocando ela no copo, e se for uma bebida quente, esquenta-la
 	public void prepararBebida(Bebida bebida) {
 		bebida.prepara();
 		System.out.printf("Colocando %s no copo!%n", bebida.getNome());

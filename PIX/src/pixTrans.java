@@ -1,15 +1,16 @@
 public class pixTrans {
+	//Atributos do Pix
 	String chaveCPF;
 	String chaveEmail;
 	String chaveAl;
 	String chaveTel;
 	
 	
-	
+	//MÃ©todo de transferÃªncia que serÃ¡ utilizado para enviar dinheiro de uma pessoa para outra
 	static void Trans(double valor, pixTrans chaves, Cliente clienteD, Cliente clienteR){
 		 clienteD.saldo -= valor; 
 		 clienteR.saldo += valor; 
-		 System.out.printf("A tranderência para " + clienteR.Nome + " do CPF " + chaves.chaveCPF + " foi realizada! %n");
-		 System.out.printf("O seu novo saldo é: %.2f%n",clienteD.saldo);
+		 System.out.printf("A tranderï¿½ncia para " + clienteR.Nome + " do CPF " + chaves.chaveCPF + " foi realizada! %n");
+		 System.out.printf("O seu novo saldo ï¿½: %.2f%n",clienteD.saldo);
 	}
 }

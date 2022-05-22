@@ -29,8 +29,9 @@ public class Main {
 		MariaPix.chaveEmail = "rafaklm.sjdhas@hotmail.com";
 		MariaPix.chaveTel = "+55(11)91235-8653";
 		
+		//TransferÃªncia entre diferentes contas
 		pixTrans.Trans(400.00, MariaPix, Rafael, Maria);
-		System.out.printf("O novo saldo na sua conta agora é: %.2f%n", Maria.saldo);
+		System.out.printf("O novo saldo na sua conta agora ï¿½: %.2f%n", Maria.saldo);
 	
 	}
 

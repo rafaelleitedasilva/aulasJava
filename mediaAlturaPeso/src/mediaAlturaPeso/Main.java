@@ -1,15 +1,17 @@
 package mediaAlturaPeso;
 
 import java.util.Scanner;
-//Digite a altura, peso e sexo de 10 pessoa e depois mostre qual tem o maior e menor valor de cada atríbuto!
+//Digite a altura, peso e sexo de 10 pessoa e depois mostre qual tem o maior e menor valor de cada atrï¿½buto!
 public class Main {
 
 	public static void main(String[] args) {
+        //Atributos que serÃ£o utilizados no registro das pessoas
 		int sexo, qtMulheres=0, qtHomens=0;
         float altura, somaH=0, mediaHomens=0, maior=0, menor=0;
 
         Scanner entrada = new Scanner(System.in);
 
+        // Fazendo o registro de 10 pessoas
         for (int i=0; i<10; i++) {
             System.out.print("Escolha o sexo da pessoa (1-Mulher, 2-Homem): ");
             sexo = entrada.nextInt();
@@ -21,7 +23,7 @@ public class Main {
                 qtHomens++;
                 somaH = somaH + altura;
             } else {
-                System.out.println("Opção sexo inválido!");
+                System.out.println("Opï¿½ï¿½o sexo invï¿½lido!");
             }
             if (altura > maior) {
                  maior = altura;
@@ -31,10 +33,14 @@ public class Main {
         }
         mediaHomens = somaH / qtHomens;
 
-        System.out.println("A maior altura do grupo é de " + maior + " m, e a menor é de " + menor + " m");
-        System.out.println("A média de altura dos homens é " + mediaHomens + " m");
-        System.out.println("O número de mulheres é " + qtMulheres);
+        //Mostrando o resltado da maior e menor altura
+        System.out.println("A maior altura do grupo ï¿½ de " + maior + " m, e a menor ï¿½ de " + menor + " m");
+        //Media da altura dos homens
+        System.out.println("A mï¿½dia de altura dos homens ï¿½ " + mediaHomens + " m");
+        //Quantidade de mulheres
+        System.out.println("O nï¿½mero de mulheres ï¿½ " + qtMulheres);
 
+        //Fechando a entrada de valores do Scanner
         entrada.close();
 		
 	}

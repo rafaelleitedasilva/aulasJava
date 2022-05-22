@@ -4,21 +4,21 @@ import java.util.Scanner;
 public class aplicacao {
 
 	public static void main(String[] args) {
-		
+		//A sobrecarga Ã© a tÃ©cnica de utilziar o mesmo nome em um mÃ©todo, mas que possui funÃ§Ãµes diferentes.
 		Matematica matematica = new Matematica();
 		
-		System.out.println("Somar dois números!");
+		System.out.println("Somar dois nï¿½meros!");
 		Scanner teclado = new Scanner(System.in);
-		System.out.printf("Digite o primeiro número: ");
+		System.out.printf("Digite o primeiro nï¿½mero: ");
 		int x = teclado.nextInt();
-		System.out.printf("Digite o segundo número:");
+		System.out.printf("Digite o segundo nï¿½mero:");
 		int y = teclado.nextInt();
 		
-		//System.out.println("Digite o terceiro número:");
+		//System.out.println("Digite o terceiro nï¿½mero:");
 		//int z = teclado.nextInt();
 		
 		int soma = matematica.somar(x, y);
-		System.out.printf("O resultado da conta é: %d ", soma);
+		System.out.printf("O resultado da conta ï¿½: %d ", soma);
 		
 		
 	}
