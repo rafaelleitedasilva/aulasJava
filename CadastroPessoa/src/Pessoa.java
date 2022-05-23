@@ -1,15 +1,18 @@
+
 public class Pessoa {
 
 	private String nome;
 	private int idade;
 	private Endereco endereco;
-	int sexoNum;
-	String sexoS;
 	Sexo sexo;
 	
-	
-	
-	
+	public void sexoNum(int num) {
+		if(num == 1) {
+			sexo = sexo.MASCULINO;
+		}else {
+			sexo = sexo.FEMININO;
+		}
+	}
 	
 	public String getNome() {
 		return nome;
@@ -30,7 +33,7 @@ public class Pessoa {
 	
 	@Override
 	public String toString() {
-		return "Pessoa [nome=" + nome + ", idade=" + idade + ", endereco=" + endereco + "]";
+		return "Pessoa [nome=" + nome + ", sexo="+ sexo +", idade=" + idade + ", endereco=" + endereco + "]";
 	}
 	
 	public void setEndereco(Endereco endereco) {
@@ -45,9 +48,7 @@ public class Pessoa {
 	
 	
 	
-	
 
-	
 	
 	
 }

@@ -6,11 +6,6 @@ import java.util.Scanner;
 
 public class Main {
 	
-	private enum Sexo{
-		MASCULINO, FEMININO;
-		
-	}
-	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
@@ -23,13 +18,13 @@ public class Main {
 		 		pessoa.setEndereco(new Endereco());
 
 		 		System.out.println("Digite seu nome: ");
-		 		pessoa.setNome(entrada.nextLine());
+		 		pessoa.setNome(entrada.next());
 		 		 
 		 		System.out.println("Digite sua idade: ");
 		 		pessoa.setIdade(entrada.nextInt());	 
 		 		
 		 		System.out.println("1 - Masculino | 2 - Feminino");
-		 		pessoa.sexoNum = entrada.nextInt();
+		 		pessoa.sexoNum(entrada.nextInt());
 		 		
 		 		System.out.println("Digite seu Bairro: ");
 		 		pessoa.getEndereco().setBairro(entrada.next());
