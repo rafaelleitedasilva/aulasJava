@@ -33,7 +33,7 @@ public class Pessoa {
 	
 	@Override
 	public String toString() {
-		return "Pessoa [nome=" + nome + ", sexo="+ sexo +", idade=" + idade + ", endereco=" + endereco + "]";
+		return "Pessoa [nome=" + nome + ", sexo="+ sexo +", idade=" + idade + endereco + "]";
 	}
 	
 	public void setEndereco(Endereco endereco) {
