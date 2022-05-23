@@ -2,7 +2,7 @@ public class Pessoa {
 
 	String nome;
 	int idade;
-	Object endereco;
+	Endereco endereco;
 	
 	
 	
@@ -19,10 +19,20 @@ public class Pessoa {
 		this.idade = idade;
 	}
 	
+	public Endereco getEndereco() {
+		return endereco;
+	}
+	
 	@Override
 	public String toString() {
-		return "Conta [nome=" + nome + ", idade=" + idade + ", endereco=" + endereco + "]";
+		return "Pessoa [nome=" + nome + ", idade=" + idade + ", endereco=" + endereco + "]";
 	}
+	
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
+	}
+	
+	
 
 	
 	

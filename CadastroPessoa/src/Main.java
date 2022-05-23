@@ -14,8 +14,8 @@ public class Main {
 		
 		 	for (int x=0; x < 2; x++) {
 		 		
-		 			Pessoa pessoa = new Pessoa();
-		 			Endereco endereco = new Endereco();	
+		 		Pessoa pessoa = new Pessoa();
+		 		pessoa.setEndereco(new Endereco());
 
 		 		System.out.println("Digite seu nome: ");
 		 		pessoa.nome = entrada.next(); 
@@ -24,16 +24,15 @@ public class Main {
 		 		pessoa.idade = entrada.nextInt();	 
 		 		 
 		 		System.out.println("Digite seu Bairro: ");
-		 		endereco.bairro = entrada.next();
+		 		pessoa.endereco.bairro = entrada.next();
 		 		 
 		 		System.out.println("Digite o nome da sua rua: ");
-		 		endereco.rua = entrada.next(); 
+		 		pessoa.endereco.rua = entrada.next(); 
 		 		
 		 		System.out.println("Digite o numero da sua residencia: ");
-		 		endereco.num = entrada.nextInt();
+		 		pessoa.endereco.num = entrada.nextInt();
 		 		
-		 		pessoa.endereco = endereco;
-		 			lista.add(pessoa);
+		 		lista.add(pessoa);
 		 		
 		 	}
 		 		
