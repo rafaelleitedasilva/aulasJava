@@ -15,7 +15,7 @@ public class main {
 //		lista.add(true);
 //		
 //		
-		//Agora ao inv�s de length utilizamos o m�todo size para saber o tamanho da lista
+		//Agora ao inves de length utilizamos o m�todo size para saber o tamanho da lista
 //		
 //		for(int x=0; x<lista.size(); x++) {
 //			System.out.println(lista.get(x));
@@ -29,8 +29,8 @@ public class main {
 //			System.out.println(valor);
 //		}
 //		
-		//Como lista � uma classe quando removemos um elemento ela n�o fica nula ou mostra '0'
-		//pq a remo��o � din�mica.
+		//Como lista � uma classe quando removemos um elemento ela nao fica nula ou mostra '0'
+		//pq a remo��o � dinamica.
 //		
 //		lista.remove(1);
 //		
@@ -42,13 +42,13 @@ public class main {
 //			lista.add(x, x);
 //		}
 //		
-		//lista.set() seta um valor em uma posi��o espec�fica
+		//lista.set() seta um valor em uma posicao especifica
 //		
 //		lista.set(13, 1238);
 //		
 //		
 //		
-		//lista.add() adiciona um valo na lista e empurra os valores depois para posi��es posteriores
+		//lista.add() adiciona um valo na lista e empurra os valores depois para posicoes posteriores
 //		
 //		lista.add(12, 236544);
 //		
@@ -58,7 +58,7 @@ public class main {
 //		}
 		
 
-		Conta conta1 = new Conta("�gua", 60);
+		Conta conta1 = new Conta("Agua", 60);
 		Conta conta2 = new Conta("Luz", 120);
 		
 		//Criando uma lista de contas e adicioando conta1 e conta2
@@ -71,6 +71,8 @@ public class main {
 		for(Conta valor: listaDeContas) {
 			System.out.println(valor);
 		}
+		
+		 
 	}
 
 }
