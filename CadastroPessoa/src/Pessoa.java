@@ -1,8 +1,13 @@
 public class Pessoa {
 
-	String nome;
-	int idade;
-	Endereco endereco;
+	private String nome;
+	private int idade;
+	private Endereco endereco;
+	int sexoNum;
+	String sexoS;
+	Sexo sexo;
+	
+	
 	
 	
 	
@@ -31,6 +36,14 @@ public class Pessoa {
 	public void setEndereco(Endereco endereco) {
 		this.endereco = endereco;
 	}
+	public Sexo getSexo() {
+		return sexo;
+	}
+	public void setSexo(Sexo sexo) {
+		this.sexo = sexo;
+	}
+	
+	
 	
 	
 

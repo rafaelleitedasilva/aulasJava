@@ -1,5 +1,6 @@
 
 public enum Sexo {
+	INDEFINIDO(0),
 	MASCULINO(1),
 	FEMININO(2);
 
