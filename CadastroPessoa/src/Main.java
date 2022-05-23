@@ -8,20 +8,20 @@ public class Main {
 		// TODO Auto-generated method stub
 
 		Scanner entrada = new Scanner(System.in);
-		List lista = new ArrayList();
+		List<Pessoa> lista = new ArrayList<Pessoa>();
 		
 		
 		
-		 	for (int x=0; x < 4; x++) {
+		 	for (int x=0; x < 2; x++) {
 		 		
-		 			Conta usuario = new Conta();
+		 			Pessoa pessoa = new Pessoa();
 		 			Endereco endereco = new Endereco();	
 
 		 		System.out.println("Digite seu nome: ");
-		 		 usuario.nome = entrada.next(); 
+		 		pessoa.nome = entrada.next(); 
 		 		 
 		 		System.out.println("Digite sua idade: ");
-		 		 usuario.idade = entrada.nextInt();	 
+		 		pessoa.idade = entrada.nextInt();	 
 		 		 
 		 		System.out.println("Digite seu Bairro: ");
 		 		endereco.bairro = entrada.next();
@@ -32,8 +32,8 @@ public class Main {
 		 		System.out.println("Digite o numero da sua residencia: ");
 		 		endereco.num = entrada.nextInt();
 		 		
-		 		usuario.endereco = endereco;
-		 			lista.add(usuario);
+		 		pessoa.endereco = endereco;
+		 			lista.add(pessoa);
 		 		
 		 	}
 		 		
