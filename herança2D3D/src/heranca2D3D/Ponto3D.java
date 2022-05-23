@@ -1,4 +1,4 @@
-package heran�a2D3D;
+package heranca2D3D;
 
 public class Ponto3D extends Ponto2D{
 	//Atributo único dessa classe
