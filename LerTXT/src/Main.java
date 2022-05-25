@@ -9,8 +9,14 @@ public class Main {
 		
 	
 		try (BufferedReader ler = new BufferedReader(new FileReader("entrada.txt"))) {
-			System.out.println(ler.read());
+			String line;
+			String string = "";
+			
+			while((line = ler.readLine()) != null) {
+				string += line + "\n";
+			}
+			System.out.println(string);
 		}
+		
 	}
-
 }
