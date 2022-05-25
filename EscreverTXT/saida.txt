@@ -1,6 +1,1 @@
-Nome do Sabonete: Jhonson, Cheiro:Azedo, Cor:Azul
-
-Nome do Sabonete: Mark, Cheiro:Doce, Cor:Marrom
-
-Nome do Sabonete: Traus, Cheiro:Sem cheiro, Cor:Branco
-
+cheiro=Azedo, cor=Azulcheiro=Doce, cor=Marromcheiro=Sem cheiro, cor=Branco

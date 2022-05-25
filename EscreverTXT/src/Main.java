@@ -19,6 +19,10 @@ public class Main {
 				escrever.write(valor);
 		 	}
 			
+			String s = sabonete.toString();
+			Sabonete sabonete4 = new Sabonete(s);
+			System.out.println(sabonete4);
+			
 		}
 	 }
 }
