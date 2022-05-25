@@ -8,6 +8,7 @@ public class Sabonete {
 		this.cheiro = cheiro;
 		this.cor = cor;
 	}
+	
 	public Sabonete(String linha) {
 		String[] ArrayTeste1 = linha.split(",");
 		String[] ArrayTeste2 = ArrayTeste1[0].split("=");
@@ -19,7 +20,7 @@ public class Sabonete {
 
 	@Override
 	public String toString() {
-		return "Sabonete: Cheiro= " + cheiro + ", Cor= " + cor ;
+		return "Sabonete: Cheiro= " + cheiro + ", Cor= " + cor +"\n" ;
 	}
 
 	
