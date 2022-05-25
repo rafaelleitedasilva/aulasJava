@@ -13,7 +13,7 @@ public class Sabonete {
 		String[] ArrayTeste2 = ArrayTeste1[0].split("=");
 		this.cheiro = ArrayTeste2[1].trim();
 		
-		String[] ArrayTeste3 = ArrayTeste2[1].split(",");
+		String[] ArrayTeste3 = ArrayTeste2[1].split("=");
 		this.cor = ArrayTeste3[1].trim();
 	}
 
