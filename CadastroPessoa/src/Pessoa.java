@@ -1,11 +1,15 @@
 
 public class Pessoa {
 
+	//Atributos da pessoa
 	private String nome;
 	private int idade;
+	//endereco do tipo Endereco, por enquanto sem um endereco de classe setado
 	private Endereco endereco;
+	//sexo do tipo Sexo que é um enum
 	Sexo sexo;
 	
+	//Metodo da Pessoa que checa o resultado no Main e define o sexo da pessoa dependendo do numero
 	public void sexoNum(int num) {
 		if(num == 1) {
 			sexo = sexo.MASCULINO;
@@ -14,6 +18,7 @@ public class Pessoa {
 		}
 	}
 	
+	//Set and Get dos atributos, por eles serem privados
 	public String getNome() {
 		return nome;
 	}
@@ -31,6 +36,7 @@ public class Pessoa {
 		return endereco;
 	}
 	
+	//override do toString para nao mostrar o endereco da classe na hora de printar no foreach
 	@Override
 	public String toString() {
 		return "Pessoa [nome=" + nome + ", sexo="+ sexo +", idade=" + idade + endereco + "]";
