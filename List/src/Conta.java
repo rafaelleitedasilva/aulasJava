@@ -10,6 +10,7 @@ public class Conta {
 		this.nome = nome;
 	}
 
+	//OVERRIDE DO TOSTRING PARA GARANTIR QUE QUANDO PRINTARMOS A CONTA NAO APARECA O SEU ENDERECO
 	@Override
 	public String toString() {
 		return "Conta de " + nome + " R$" + valor;

@@ -64,6 +64,8 @@ public class main {
 		//Criando uma lista de contas e adicioando conta1 e conta2
 		List<Conta> listaDeContas = new ArrayList<Conta>();
 		
+		//ADICIONANDO OS OBJETOS NA LISTA, COMO A LISTA E DO TIPO CONTA NAO PRECISAMOS NOS PREOCUPAR SE A ARRAY VAI ACEITAR OU NAO OS NOSSOS DADOS
+		//JA QUE SO VAMOS INSERIR DADOS DO TIPO CONTA
 		listaDeContas.add(conta1);
 		listaDeContas.add(conta2);
 		
