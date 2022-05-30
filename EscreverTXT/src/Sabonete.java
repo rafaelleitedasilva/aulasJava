@@ -38,7 +38,7 @@ public class Sabonete {
 
 	@Override
 	public String toString() {
-		return "Sabonete: Cheiro= " + cheiro + ", Cor= " + cor +"\n" ;
+		return "Sabonete: Cheiro=" + cheiro + ", Cor=" + cor;
 	}
 
 	

@@ -1,3 +1,0 @@
-Sabonete: Cheiro= Azedo, Cor= Azul
-Sabonete: Cheiro= Doce, Cor= Marrom
-Sabonete: Cheiro= Sem cheiro, Cor= Branco

@@ -48,9 +48,6 @@ public class Pessoa {
 	public Sexo getSexo() {
 		return sexo;
 	}
-	public void setSexo(Sexo sexo) {
-		this.sexo = sexo;
-	}
 	
 	
 	
