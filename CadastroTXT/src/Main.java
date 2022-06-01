@@ -20,8 +20,12 @@ public class Main {
 			pessoa.setNome(entrada.next());
 			System.out.print("Digite sua idade:");
 			pessoa.setIdade(entrada.next());
+			int opcao = 0;
+			while(opcao != 1 &&  opcao != 2) {
 			System.out.print("Digite seu Gênero (1-Feminino 2-Masculino):");
-			pessoa.sexoNum(entrada.nextInt());
+			opcao = entrada.nextInt();
+			pessoa.sexoNum(opcao);
+			}
 			pessoa.setEndereco(new Endereco(1));
 			System.out.println("Agora precisamos guardar o seu endereço:");
 			System.out.print("Você mora em qual Rua:");

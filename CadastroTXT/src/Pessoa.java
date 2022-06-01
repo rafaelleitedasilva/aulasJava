@@ -17,7 +17,9 @@ public class Pessoa {
 		}
 		else if(sexo == 2) {
 			this.sexo=Sexo.MASCULINO;
-		}	
+		}	else {
+			System.out.println("Valor Inválido: 1 - Feminino | 2 - Masculino");
+		}
 	}
 	
 	//CRIANDO OS GET AND SET DOS ATRIBUTOS DA PESSOA, POR CONTA DELES SEREM PRIVADOS
@@ -38,6 +40,11 @@ public class Pessoa {
 	}
 	public void setEndereco(Endereco endereco) {
 		this.endereco = endereco;
+	}
+	
+
+	public Sexo getSexo() {
+		return sexo;
 	}
 
 	//OVERRIDE DO TO STRING PARA QUE POSSAMOS TER UMA VISUALIZAÇÃO DOS DADOS QUANDO
