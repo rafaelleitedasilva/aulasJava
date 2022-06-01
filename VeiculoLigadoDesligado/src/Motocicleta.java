@@ -1,6 +1,6 @@
 
 public class Motocicleta extends Veiculo {
-	//Todas as classes QUE EXTENDEM de veículo possuem um override de isLigado
+	//Todas as classes QUE EXTENDEM de VEICULO possuem um override de isLigado
 	@Override
 	public boolean isLigado() {
 		if (super.isLigado()==true) {

@@ -3,17 +3,21 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-	//FUNDAMENTOS JAVA É UMA PASTA COM DIVERSOS CONCEITOS DE JAVA, ALGUNHS SIMPLES, OUTROS MAIS COMPLEXOS
+	//FUNDAMENTOS JAVA E UMA PASTA COM DIVERSOS CONCEITOS DE JAVA, ALGUNHS SIMPLES, OUTROS MAIS COMPLEXOS
 //		int x = 100;
 //		double y = 200.3;
-//
+		
+		//DECLARANDO VARIAVEIS
 //		int a = 0;
 //		double b = 0;
 //
-		//Casting ímplicito de um valor
+		//REALIZANDO O CASTING IMPLICITO DO NUMERO 100000 PARA O TIPO SHORT
+		//O CASTING IMPLICITO E OBRIGATORIO NESSES CASOS JA QUE OCORRE UMA PERDA
+		//DE INFORMACAO AO TRANSFORMAR OS TIPOS
+		
 //		short z = (short) 100000;
 //
-//		a = (int) y; // Casting implicit
+//		a = (int) y;
 //		b = x;
 //
 //		System.out.println(a);
@@ -22,7 +26,8 @@ public class Main {
 //		System.out.println(z+"\n");
 //
 //		int idadePessoa = 60;
-//
+		
+		//IF-ELSE BASICO DO JAVA
 //		if (idadePessoa < 18) {
 //			System.out.println("Voc� n�o pode beber!");
 //		} else if (idadePessoa >= 60) {
@@ -30,11 +35,12 @@ public class Main {
 //		} else {
 //			System.out.println("Voc� pode beber!");
 //		}
-//
+
+		//CONCATENANDO UMA STRING
 //		System.out.println("Voc� tem " + idadePessoa + " anos \n");
 //
 //		int dia = 10;
-		//O switch é uma forma alternativa de realizar um teste condicional e retornar um valor caso o teste seja true
+		//O SWITCH E uma forma alternativa de realizar um teste condicional e retornar um valor caso o teste seja true
 //		switch (dia) {
 //		case 1:
 //			System.out.println("Hoje � domingo");
@@ -103,6 +109,8 @@ public class Main {
 //			x = x + 1;
 //			System.out.println(x);
 //		} while (x < 10);
+		
+		//USANDO O SCANNER PELA PRIMEIRA VEZ
 //	
 //		Scanner entrada = new Scanner(System.in);
 //		System.out.println("Digite o n�mero que voc� deseja saber a tabuada");
@@ -112,6 +120,8 @@ public class Main {
 //			System.out.println(x + " x "+ y + " = "+ x*y);
 //		}
 //		
+		
+		//CRIANDO UM ARRAY DO TIPO DOUBLE
 //		double x[] = {
 //			3,5,3,5
 //		};
@@ -148,6 +158,7 @@ public class Main {
 //			numero[aux2] = teclado.nextInt();
 //		}
 //		
+		//FOR USANDO COMO LIMITE O TAMANHO DA ARRAY
 //		System.out.println("");
 //		for(int aux2 = 0; aux2<numero.length;aux2++) {
 //			System.out.println("Valor do �ndice: " + aux2 + " = " + numero[aux2]);
@@ -156,7 +167,7 @@ public class Main {
 
 		
 		
-		//Como o arrayObject � do tipo Object ele herda da classe pai
+		//Como o arrayObject E do tipo Object ele herda da classe pai
 		//isso significa que arrayObject aceitar qualquer tipo de valor
 
 //		obj[2] = 12;
