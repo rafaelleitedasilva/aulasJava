@@ -60,7 +60,7 @@ public class Main {
 			}
 			
 			//MOSTRANDO O CONTEÚDO DA SEGUNDA LISTA
-			for (Pessoa pessoa : Pessoas) {
+			for (Pessoa pessoa : Pessoas2) {
 			System.out.println(pessoa);
 			}
 
