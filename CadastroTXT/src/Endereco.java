@@ -1,9 +1,10 @@
 public class Endereco {
+	//CRIANDO AS VARIAVEIS PRIVADAS DO ENDERECO
 	private String rua;
 	private String num;
 	private String bairro;
-//	Criando as variaveis utilizadas em endereco
-	
+
+	//GET AND SET DOS ENDERECOS
 	public String getRua() {
 		return rua;
 	}
@@ -23,16 +24,20 @@ public class Endereco {
 		this.bairro = bairro;
 	}
 	
+	//OVERRIDE DO TOSTRING PARA VISUALIZACAO DOS DADOS
 	@Override
 	public String toString() {
-		return ",Endereço: " + rua + "-" + num + "-" + bairro;
+		return ",Endereço:" + rua + "-" + num + "-" + bairro;
 	}
-//	Como sao atributos privados criamos o get e set
+	
+	//CRIANDO O CONSTRUTOR NULO PARA QUE NAO OCORRA OBRIGATORIEDADE DE DADOS NA HORA DE INSTANCIAR
+	//A CLASSE, E CLARO QUE EXISTE FORMAS MAIS INTELIGENTES DE SE FAZER ISSO...
 	public Endereco(int x) {
 
 	}
-//	Aqui o construtor nos obrigaria a colocar o valor na construcao do obj
-	
+
+	//MESMA QUEBRA DE STING QUE ACONTECE NA PESSOA, COMO NA PESSOA UTILIZAMOS O PIPE PARA SEPARAR,
+	//AQUI USAMOS O TRAVESSAO PARA QUE NAO OCORRA CONFLITOS NETRE AS QUEBRAS
 	public Endereco(String texto) {
 		String[] arrayAuxiliar1 = texto.split("-");
 		
@@ -41,7 +46,8 @@ public class Endereco {
 		this.num = arrayAuxiliar1[1].trim();
 		
 		this.bairro = arrayAuxiliar1[2].trim();
+		System.out.println(arrayAuxiliar1);
 	}
-//		Aqui quebramos e tiramos os espaços do conteudo do txt
+
 
 }

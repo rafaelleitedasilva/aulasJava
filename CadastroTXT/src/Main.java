@@ -14,7 +14,7 @@ public class Main {
 		//CRIANDO UMA LISTA GENÉRICA DE PESSOA PARA COLOCAR OS OBJETOS PESSOA
 		List<Pessoa> Pessoas = new ArrayList<Pessoa>();
 		//FOR PARA O CADASTRO DAS PESSOAS
-		for (int x = 0; x < 4; x++) {
+		for (int x = 0; x < 1; x++) {
 			Pessoa pessoa = new Pessoa(1);
 			System.out.print("Digite seu nome:");
 			pessoa.setNome(entrada.next());
@@ -23,12 +23,13 @@ public class Main {
 			System.out.print("Digite seu Gênero (1-Feminino 2-Masculino):");
 			pessoa.sexoNum(entrada.nextInt());
 			pessoa.setEndereco(new Endereco(1));
-			System.out.print("Endereço:");
+			System.out.println("Agora precisamos guardar o seu endereço:");
 			System.out.print("Você mora em qual Rua:");
 			pessoa.getEndereco().setRua(entrada.next());
 			System.out.print("Digite o número da sua casa:");
 			pessoa.getEndereco().setNum(entrada.next());
-			System.out.print("Digite seu Bairro");
+			System.out.print("Digite seu Bairro:");
+			System.out.println("");
 			pessoa.getEndereco().setBairro(entrada.next());
 			//ADICIONANDO TODAS AS PESSOAS NA LISTA PESSOAS
 			Pessoas.add(pessoa);
@@ -40,7 +41,7 @@ public class Main {
 			for (Pessoa pessoa : Pessoas) {
 				escrever.write(pessoa.toString() + "\n");
 			} 
-
+		}
 			//CRIANDO UMA SEGUNDA LISTA PARA COLOCAR AS PESSOAS INSTANCIADAS A PARTIR DA STRING VINDA
 			//VINDA DO ARQUIVO TXT
 			List<Pessoa> Pessoas2 = new ArrayList<Pessoa>();
@@ -52,13 +53,12 @@ public class Main {
 					Pessoa pessoa = new Pessoa(line);
 					Pessoas2.add(pessoa);
 				}
-				
-				//MOSTRANDO O CONTEÚDO DA SEGUNDA LISTA
-				for (Pessoa cadastro : Pessoas2) {
-				System.out.println(cadastro);
-				}
-
 			}
-		}
+			
+			//MOSTRANDO O CONTEÚDO DA SEGUNDA LISTA
+			for (Pessoa pessoa : Pessoas2) {
+			System.out.println(pessoa);
+			}
+
 	}
 }

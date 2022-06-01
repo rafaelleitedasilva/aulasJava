@@ -1,16 +1,16 @@
 public class Pessoa {
+	//CRIANDO UM ENUM BASICO PARA O SEXO DA PESSOA
 	private enum Sexo{
 		FEMININO, MASCULINO;
 	}
-//	criamos um enum para receber o sexo,
-//	ele facilita para que se extenda o conteúdo nas outras classes
 	
+	//ATRIBUTOS DA PESSOA
 	private String nome;
 	private String idade;
 	private Endereco endereco;
 	private Sexo sexo;
 	
-// Crio as variaveis com as informacoes desejadas do cadastro 
+	//METODO QUE VAI VERIFICAR O SEXO DA PESSOA DEPENDENDO DO NUMERO ESCOLHIDO
 	public void sexoNum(int sexo) {
 		if(sexo == 1) {
 			this.sexo=Sexo.FEMININO;
@@ -19,9 +19,8 @@ public class Pessoa {
 			this.sexo=Sexo.MASCULINO;
 		}	
 	}
-//	Criamos um metodo para receber o resultado do if, else
-//	Conforme o numero digitado ele recebe o sexo da pessoa
 	
+	//CRIANDO OS GET AND SET DOS ATRIBUTOS DA PESSOA, POR CONTA DELES SEREM PRIVADOS
 	public String getNome() {
 		return nome;
 	}
@@ -40,38 +39,49 @@ public class Pessoa {
 	public void setEndereco(Endereco endereco) {
 		this.endereco = endereco;
 	}
-//	Comos os atributos sao privados, precisamos dos get e set para poder definir os valores
+
+	//OVERRIDE DO TO STRING PARA QUE POSSAMOS TER UMA VISUALIZAÇÃO DOS DADOS QUANDO
+	//CHAMAMOS O OBJETO
 	@Override
 	public String toString() {
-		return "Nome: " + nome + " ,Idade: " + idade + " ,Sexo: " + sexo + endereco ;
+		return "|Nome: " + nome + " ,Idade: " + idade + " ,Sexo: " + sexo + endereco;
 	}
-//	O toString vai  mostrar o que aparecera na tela quando chamarmos Pessoa
+
+	//PESSOA COM CONSTRUTOR RECEBENDO INTEIRO APENAS PARA QUE NAO OCORRA A OBRIGATORIEDADE DE SE COLOCAR
+	//UMA STRING QUANDO ESTIVERMOS INSTANCIANDO AS CLASSES
 	public Pessoa(int x) {
 	}
-//	Se nao criasse esse contrutor seriamos obrigados
-//	a colocar o conteúdo na construcao do objeto
+
+	//CRIANDO O CONSTRUTOR QUE VAI RECEBER O OBJETO EM FORMA DE STRING
 	public Pessoa(String texto) {
+		
+		//QUEBRA DA STRING NAS VIRGULAS E ARMAZENAMENTO
 		String[] arrayAuxiliar1 = texto.split(",");
 		
+		//QUEBRA DA STRING NO DOIS PONTOS E RETIRADA DOS ESPAÇOS VAZIOS
+		//E ARMAZENAMENTO NO ATRIBUTO
 		String[] arrayAuxiliar2 = arrayAuxiliar1[0].split(":");
 		this.nome = arrayAuxiliar2[1].trim();
 		
 		String[] arrayAuxiliar3 = arrayAuxiliar1[1].split(":");
-		this.idade = arrayAuxiliar3[0].trim();
+		this.idade = arrayAuxiliar3[1].trim();
 		
 		String[] arrayAuxiliar4 = arrayAuxiliar1[2].split(":");
-		String nu = arrayAuxiliar4[0].trim();
-//		Aqui quebramos e tiramos os espaços do conteudo do txt
+		String nu = arrayAuxiliar4[1].trim();
+
+		//OUTRO IF-ELSE QUE VAI RECEBER O VALOR DO MASCULINO OU FEMININO E CONVERTER ELE PARA
+		//O TIPO ENUM DE SEXO
 		if(nu == "MASCULINO") {
 			this.sexo= Sexo.MASCULINO;
 		}else {
 			this.sexo= Sexo.FEMININO;
 		}
-//	Peguei o valor da string que e coloquei no if else, 
-//	dependendo do valor eu dei um resultado sobre o sexo
+		
+		//INSTANCIANDO O ENDERECO NOVAMENTE POR CONTA DELE TAMBEM SE RUMA CLASSE
 		String[] arrayAuxiliar5 = arrayAuxiliar1[3].split(":");
-		this.endereco = new Endereco(arrayAuxiliar5[1]);
-//	instaciou um novo endereço, e fez o mesmo com o conteudo do cadastro acima ex: nome 
+		this.endereco = new Endereco(arrayAuxiliar5[3]);
+
+
 	}
 	
 }
