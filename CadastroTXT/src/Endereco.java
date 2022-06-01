@@ -46,7 +46,6 @@ public class Endereco {
 		this.num = arrayAuxiliar1[1].trim();
 		
 		this.bairro = arrayAuxiliar1[2].trim();
-		System.out.println(arrayAuxiliar1);
 	}
 
 

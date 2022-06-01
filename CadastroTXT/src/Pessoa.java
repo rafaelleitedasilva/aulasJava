@@ -79,7 +79,7 @@ public class Pessoa {
 		
 		//INSTANCIANDO O ENDERECO NOVAMENTE POR CONTA DELE TAMBEM SE RUMA CLASSE
 		String[] arrayAuxiliar5 = arrayAuxiliar1[3].split(":");
-		this.endereco = new Endereco(arrayAuxiliar5[3]);
+		this.endereco = new Endereco(arrayAuxiliar5[1]);
 
 
 	}
