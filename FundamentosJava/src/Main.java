@@ -66,7 +66,9 @@ public class Main {
 //		default:
 //			System.out.println("Esse dia n�o existe! T� maluco p�");
 //		}
-//		
+
+		//OS SWITCHS PODEM CONTER UMA VARIAVEL DO TIPO CHAR, STRING OR INT PARA VALIDACAO
+
 //		char caractere = '2';
 //		
 //		switch(caractere) {
@@ -79,9 +81,11 @@ public class Main {
 //		default:
 //			System.out.println("Some daqui meu");
 //		}
-//		
+
+		//CRIANDO A STRING FAROL QUE VALIDARA OS VALORES DO SWITCH
 //		String farol = "Laranja";
-//		
+
+
 //		switch(farol) {
 //		case "Verde":
 //			System.out.println("Prossiga");
@@ -143,9 +147,14 @@ public class Main {
 //			System.out.println("Valor do �ndice: " + aux1 + " = " + nome[aux1]);
 //			
 //		}
-//		
+
+		//CRIANDO UMA ARRAY DO TIPO INT COM O MAXIMO DE 5 ELEMENTOS REPRESENTADO PELO [5]
 //		int[] arrayInt = new int[5];
+
+		//CRIANDO UMA ARRAY DO TIPO STRING COM O MAXIMO DE 5 ELEMENTOS REPRESENTADO PELO [3]
 //		String[] arrayString = new String[2];
+
+		//CRIANDO UMA ARRAY DO TIPO DOUBLE COM O MAXIMO DE 5 ELEMENTOS REPRESENTADO PELO [4]
 //		double[] arrayDouble = new double[4];
 //		
 //		arrayInt[3] = 4;
@@ -172,38 +181,38 @@ public class Main {
 
 //		obj[2] = 12;
 //
-//		
+		//CRIANDO UMA ARRAY DO TIPO OBJECT COM 5 ELEMENTOS MAXIMOS QUE ACEITA QUALQUER TIPO DE VARIAVEL
+		//SEJA STRING, DOUBLE, INT, OUTRO OBJETO OU VALORES BOOLEANOS
 //		Object[] arrayObject = new Object[5];
 //		arrayObject[0] = 18;
 //		arrayObject[1] = "Rafael";
 //		arrayObject[2] = 1.89;
 //		arrayObject[3] = true;
 //		arrayObject[4] = obj[2];
-//		
+
+		//PARA CORRER OS ELEMENTOS DE UMA ARRAY LINEAR FAZEMOS UM FOR SIMPLES QUE CORRE TODOS OS ELEMENTOS DA ARRAY ATE 
+		//O CHEGAR AO SEU COMPRIMENTO, OU SEJA, arrayObject.length
 //		for(int aux2 = 0; aux2<arrayObject.length;aux2++) {
 //			System.out.println("Valor do �ndice: " + aux2 + " = " + arrayObject[aux2]);
 //
 //		}
 		
-		//O array Bidirecional permite criar linhas e colunas!
+		//A array Bidirecional permite criar linhas e colunas!
+		//A array Bidirecional é uma matriz onde o primeiro valo representa a linha nesse caso [3]
+		//E o segundo valor a coluna, nesse caso [5]
 		int[][] arrayBidirecional = new int[3][5];
 		arrayBidirecional[0][3] = 7;
 		arrayBidirecional[2][1] = 2;
 		
 		//Usamos dois for um para linha e outro para coluna
 		for(int linha = 0; linha<arrayBidirecional.length;linha++) {
-			//arrayBidirecional[0] faz com que a gente pegue o valor da coluna
+			//arrayBidirecional[0] faz com que a gente pegue o comprimento da coluna e não da linha da matriz
+			//dessa forma conseguimos percorrer tanto as linhas quanto as colunas
 			for(int coluna = 0; coluna<arrayBidirecional[0].length;coluna++) {
 				System.out.printf("Matriz%dx%d = %d %n",linha,coluna, arrayBidirecional[linha][coluna]);
 			}
 			System.out.println();
-		}
-		
-		
-		
-		
-		
-		
+		}	
 	}
 
 }
