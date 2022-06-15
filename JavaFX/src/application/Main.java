@@ -52,6 +52,7 @@ public class Main extends Application {
 			
 			//Deixando o sexo Masculino já selecionado
 			btnMasc.setSelected(true);
+			grid.setStyle("-fx-background-color: BEIGE;-fx-font: normal bold 20px 'Times';"); 
 			
 			//Colando os botões no mesmo grupo para que quando um for selecionado o outro não possa ser selecionado junto
 			ToggleGroup group = new ToggleGroup();
@@ -70,6 +71,7 @@ public class Main extends Application {
 			Button btnTeste = new Button("Enviar");
 			btnTeste.setOnAction(event -> lblTeste.setText(txtNome.getText()));
 			grid.add((btnTeste), 1, 2);
+			
 			
 			//Alinhando a Grid
 			grid.setAlignment(Pos.CENTER); 

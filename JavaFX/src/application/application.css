@@ -4,6 +4,7 @@
 -fx-background-color: black;
 -fx-text-fill: white;
 -fx-font: normal bold 20px 'Times';
+
 }
 
 .label{
@@ -15,10 +16,6 @@
 }
 
 .textfield{
--fx-font: normal bold 20px 'Times';
-}
-
-.gridpane{
 -fx-font: normal bold 20px 'Times';
 }
 
