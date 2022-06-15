@@ -1,5 +1,33 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
 
-root {
-    background-color: black;
+.button {
+-fx-background-color: black;
+-fx-text-fill: white;
+-fx-font: normal bold 20px 'Times';
 }
+
+.label{
+-fx-font: normal bold 20px 'Times';
+}
+
+.hbox{
+-fx-font: normal bold 20px 'Times';
+}
+
+.textfield{
+-fx-font: normal bold 20px 'Times';
+}
+
+.gridpane{
+-fx-font: normal bold 20px 'Times';
+}
+
+.Scene{
+-fx-font: normal bold 20px 'Times';
+}
+
+.togglegroup{
+-fx-font: normal bold 20px 'Times';
+}
+
+
