@@ -1,4 +1,4 @@
-package CalculaICM;
+package CalculaIMC;
 
 public class IMC {
 	Pessoa pessoa;
