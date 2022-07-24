@@ -11,6 +11,7 @@ public class Ponto3D extends Ponto2D{
 	}
 
 	//Faz o override do toString e adiciona o z
+	//ja que o ponto3d extends do ponto2d nos utilizamos o super para puxar oq ja ta escrito no tostring do ponto2d
 	@Override
 	public String toString() {
 		return super.toString() + "[z=" + z + "]";

@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class Principal {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Scanner entrada = new Scanner(System.in);
 		System.out.println("Digite quantos anos voc� t�m: ");
 		int anos = entrada.nextInt();
